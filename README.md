@@ -158,7 +158,7 @@ def calculate_values(request):
             resistance = float(resistance)
             intensity = float(intensity)
 
-            power = intensity**2*resistance
+            power = (intensity**2)*resistance
 
             # Update the context with calculated values
             context['resistance'] = round(resistance, 2)
